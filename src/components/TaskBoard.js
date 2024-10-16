@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { useState, useEffect } from "react";
 import Column from "./Column";
 import TaskModal from "./TaskModal"; // Import the modal component
