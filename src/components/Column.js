@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from "react";
 
 // Import the icons (adjust paths according to your project structure)
