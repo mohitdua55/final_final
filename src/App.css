@@ -1,0 +1,168 @@
+.task-board {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 14px; /* Global font size for the entire task board */
+}
+
+.column {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  width: 50%;
+  font-size: 12px; /* Smaller font for column headers */
+}
+
+.task-list {
+  margin-top: 10px;
+}
+
+.task-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-size: 13px; /* Decrease font size in task cards */
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 13px; /* Decrease font size in the header */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px; /* Smaller font for buttons */
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column ul li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between; /* Space between child elements */
+  align-items: center; /* Vertically center the items */
+  font-size: 14px; /* Smaller font for task headers */
+  width: 100%; /* Ensure the header takes the full width */
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1 / 1; /* Ensures a 1:1 ratio, keeping the circle shape */
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px; /* Change to margin-left for proper spacing */
+  overflow: hidden; /* To prevent any content overflow */
+  flex-shrink: 0; /* Prevent the avatar from shrinking in flex containers */
+}
+
+/* Updated CSS without content property */
+.priority-card {
+  position: relative;
+  padding-bottom: 30px; /* Add space at the bottom for the icon */
+}
+
+.priority-icon {
+  position: relative;
+  bottom: -2px;
+  right: 2px;
+  width: 20px; /* Width of the icon */
+  height: 20px; /* Height of the icon */
+}
+
+/* Ensure no background color or borders */
+.priority-icon img {
+  width: 100%; /* Make the image take full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: different styles for different priorities */
+.priority-0.priority-icon {
+  content: url("E:/ReactJS/react-project/src/icons_req/icons_FEtask/No-priority.svg"); /* Icon for priority 0 */
+}
+
+.priority-1.priority-icon {
+  content: url("E:/ReactJS/react-project/src/icons_req/icons_FEtask/Img - Low Priority.svg"); /* Icon for priority 1 */
+}
+
+.priority-2.priority-icon {
+  content: url("E:/ReactJS/react-project/src/icons_req/icons_FEtask/Img - Medium Priority.svg"); /* Icon for priority 2 */
+}
+
+.priority-3.priority-icon {
+  content: url("E:/ReactJS/react-project/src/icons_req/icons_FEtask/Img - High Priority.svg"); /* Icon for priority 3 */
+}
+
+.priority-4.priority-icon {
+  content: url("E:/ReactJS/react-project/src/icons_req/icons_FEtask/SVG - Urgent Priority grey.svg"); /* Icon for priority 4 */
+}
+
+.tag {
+  position: absolute; /* Position it absolutely */
+  bottom: 10px; /* Adjust the distance from the bottom */
+  right: 10px; /* Adjust the distance from the right */
+  font-size: 12px; /* Font size for the tag */
+  color: #625f5f; /* Change this color to match your design */
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.icon-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.column-actions {
+  display: flex;
+  gap: 0.5px; /* Adjust the gap between buttons if needed */
+}
+
+.column-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px; /* Adjust the padding if needed */
+}
+
+.column-actions button img {
+  width: 20px; /* Adjust the size of the icons */
+  height: 20px;
+}
